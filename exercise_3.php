@@ -69,14 +69,14 @@ $isRegisteredToVote = true;
 echo "<h2>Logical Operator Practice</h2>";
 
 if ($userAge >= 18 && $userAge <= 35 && $isRegisteredToVote) {
-    echo "Eligible to vote.";
+    $voteMessage = "Eligible to vote.";
 } else {
-    echo "Not eligible to vote.";
+    $voteMessage = "Not eligible to vote.";
 }
 
 echo "Age : $userAge<br>";
 echo "Registered to vote: " . ($isRegisteredToVote ? "Yes" : "No") . "<br>";
-
+echo "Result: $voteMessage <br>";
 
 // Task 5: Dynamic Discount
 
